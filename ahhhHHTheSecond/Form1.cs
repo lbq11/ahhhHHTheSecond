@@ -12,9 +12,16 @@ namespace ahhhHHTheSecond
 {
     public partial class Form1 : Form
     {
+        int youClickedme;
         public Form1()
         {
+            youClickedme = 1;
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "You clicked me "  + youClickedme++;
         }
     }
 }
